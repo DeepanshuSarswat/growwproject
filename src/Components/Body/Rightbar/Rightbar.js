@@ -52,9 +52,8 @@ function Rightbar() {
       x = (count - 1) * 10;
       let value = arr.slice(x, y);
       console.log(value);
-      setchunkData(value);
-      setstarter(x);
-      setender(y);
+
+      prenext(value, x, y);
     }
   };
   let Prevpage = () => {
@@ -65,10 +64,7 @@ function Rightbar() {
       y = count * 10;
       x = (count - 1) * 10 + 1;
       let value = arr.slice(x, y);
-      setchunkData(value);
-      console.log(value);
-      setstarter(x);
-      setender(y);
+      prenext(value, x, y);
     }
     if (count <= 0) {
       count = 1;
@@ -79,13 +75,14 @@ function Rightbar() {
       y = 10;
       x = 0;
       let value = arr.slice(x, y);
-      setchunkData(value);
-      console.log(value);
-      setstarter(x);
-      setender(y);
+      prenext(value, x, y);
     }
   };
-
+  function prenext(value, x, y) {
+    setchunkData(value);
+    setstarter(x);
+    setender(y);
+  }
   function data() {
     if (Banks.length > 0) {
       let a = Banks.splice(0, 10);
