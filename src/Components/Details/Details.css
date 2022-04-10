@@ -1,0 +1,7 @@
+.BankDetailpage {
+  padding: 12px 0px;
+}
+.BankDetailpage > table > tr > td,
+.BankDetailpage > table > tr > th {
+  font-size: 16px;
+}

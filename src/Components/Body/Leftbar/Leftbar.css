@@ -1,0 +1,11 @@
+.Leftbar {
+  height: 85vh;
+  border: 1px solid black;
+}
+.Leftbar > ul > li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding: 6px 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
