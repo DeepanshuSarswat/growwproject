@@ -253,7 +253,7 @@ function Rightbar() {
                 {starter}-{ender} Of {Math.ceil(Banks.length / 10)}
               </p>
               <button
-                disabled={chunkData.length == 0 ? true : false}
+                disabled={chunkData.length == 0 || chunkData.length < 10 ? true : false}
                 onClick={Nextpage}
               >
                 <ArrowForwardIosIcon className="ArowIcon" />
